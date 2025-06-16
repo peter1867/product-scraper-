@@ -1,0 +1,13 @@
+pc에서 북마크 추가 
+다른 쇼핑몰 상품복사 해서
+내쇼핑몰에 붙여넣기 기능 코드
+
+javascript:(function(){
+  const title = document.querySelector('h1')?.innerText || '제목 없음';
+  const img = document.querySelector('img')?.src || '이미지 없음';
+  const price = document.querySelector('.price, .product-price, [class*=price]')?.innerText || '가격 없음';
+  const desc = document.querySelector('.product-description, .detail, [class*=description]')?.innerText || '설명 없음';
+
+  const text = ✅ 상품명: ${title}\n🖼 이미지: ${img}\n💰 가격: ${price}\n📝 설명: ${desc};
+  prompt("상품 정보를 복사하세요!", text);
+})();
